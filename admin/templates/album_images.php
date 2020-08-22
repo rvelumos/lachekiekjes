@@ -15,7 +15,6 @@
 $id=$_GET['project_id'];
 ?>
 <div class='edit'><a href='index.php?section=projects&amp;project_id=<?=$_GET['project_id']?>&amp;mode=notes&amp;cmd=add_note'><img src='<?=ROOT?>images/note.png' alt=''/>Notitie toevoegen</a></div>
-
 <div class='remove'><a href='index.php?section=projects&amp;project_id=<?=$_GET['project_id']?>&amp;cmd=delete_project'><img src='<?=ROOT?>images/cross.gif' alt=''/> Verwijderen</a></div>
 </div>
 
@@ -72,9 +71,6 @@ $this->contactDetails($id);
         <div class='tekst'>
         <? if(isset($msg['img_empty'])) echo $msg['img_empty'];?></div>
         
-
-
-        
 		<div class='album_items'>
 		<?
 
@@ -99,9 +95,7 @@ $this->contactDetails($id);
 					}
 					echo "</span>";
 				}
-			}
-			
-			
+			}						
 		}
 		?>
         </div>

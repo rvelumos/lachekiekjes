@@ -1,6 +1,3 @@
-
-
-
 <div class='add'><a href='index.php?section=projects&amp;cmd=add_project'><img src='<?=ROOT?>images/plus.png' alt=''/> Project toevoegen</a></div>
 <!--<div class='layout'><div class='left'><b>Toon gegevens als:</b></div> <div class='right'><a href='<?=$_SERVER['PHP_SELF']?>?<?=htmlentities($_SERVER['QUERY_STRING'])?>&layout=gallery'><img src='images/miniature.png' alt='' /></a><a href='<?=$_SERVER['PHP_SELF']?>?<?=htmlentities($_SERVER['QUERY_STRING'])?>&layout=list'><img src='images/list.png' alt='' /></a></div></div>-->
         <div>
@@ -15,10 +12,7 @@
                     while($project = $result->fetch_array(MYSQLI_BOTH)){
 						$project_id = $project['id'];
                         
-                        echo "<tr><td><img src='".ROOT."/images/folder.png' alt='' /><a href='{$_SERVER['PHP_SELF']}?section=projects&amp;project_id={$project['id']}'>";
-                        //if($album['thumb']!='')
-                          //  echo "<img src='".ROOT."image.php?thumb={$project['thumb']}&amp;size=$size' alt='' />";	
-                        
+            echo "<tr><td><img src='".ROOT."/images/folder.png' alt='' /><a href='{$_SERVER['PHP_SELF']}?section=projects&amp;project_id={$project['id']}'>";                                             
 						echo $project['name']. "</a></td><td><span style='font-size:11px; font-weight:400;'>".$project['start_date']."</span></td><td class='icons' align='right'>".$this->iconInvoice($project_id).$this->iconPhotos($project_id).$this->iconContact($project_id)."</td></tr>";         
                         
                     }
@@ -37,10 +31,7 @@
                     while($project = $result->fetch_array(MYSQLI_BOTH)){
 						$project_id = $project['id'];
                         
-                        echo "<tr><td><img src='".ROOT."/images/folder.png' alt='' /><a href='{$_SERVER['PHP_SELF']}?section=projects&amp;project_id={$project['id']}'>";
-                        //if($album['thumb']!='')
-                          //  echo "<img src='".ROOT."image.php?thumb={$project['thumb']}&amp;size=$size' alt='' />";	
-                        
+            echo "<tr><td><img src='".ROOT."/images/folder.png' alt='' /><a href='{$_SERVER['PHP_SELF']}?section=projects&amp;project_id={$project['id']}'>";            
 						echo $project['name']. "</a></td><td><span style='font-size:11px; font-weight:400;'>".$project['start_date']."</span></td><td class='icons' align='right'>".$this->iconInvoice($project_id).$this->iconPhotos($project_id).$this->iconContact($project_id)."</td></tr>";         
                         
                     }
