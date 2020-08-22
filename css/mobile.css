@@ -1,0 +1,50 @@
+/**** Mobile CSS ****/
+
+@media only screen and (max-device-width: 900px) {
+	div.main_container{
+		background-image:url('../images/logo_small.png');
+		background-repeat:no-repeat;
+		min-height:100px;
+		overflow:hidden;
+		padding-bottom:-20px;
+		margin: 0 auto 0 auto;
+		max-width: 850px;
+		width:98%;
+	}
+	
+	p.menu_link_selected,
+	p.menu_link{
+		font-size:18px;
+		margin:5px 10px 0px 0px;
+	}
+
+	p.menu_link_selected img,
+	p.menu_link img{
+		margin-top: 3px;
+		margin-left:5px;
+	}
+
+	p.menu_link_selected a,
+	p.menu_link a{
+		padding: 3px;
+		padding-left:20px;
+	}
+	
+	div.main_container .main_content .content_block{
+		font-size: 12px !important;
+		line-height: 15px;
+		margin: 50px 10px 0 0;
+		max-width:700px;
+		width: 98%;
+	}
+
+	div.main_container .main_content{
+		background-image:url('../images/bg_layout.png');
+		height:800px;
+		width:1200px;	
+	}
+
+	div.main_container .main_content left_container{
+		display:none;	
+	}
+}
